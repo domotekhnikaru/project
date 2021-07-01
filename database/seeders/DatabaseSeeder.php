@@ -21,32 +21,38 @@ class DatabaseSeeder extends Seeder
      * @return void
      * @throws \Exception
      */
-    public function run()
+    public function run(): void
     {
         $this->connection->table('categories')->insert([
             [
                 'id'    => 1,
                 'title' => 'Телевизоры',
+                'price' => 0,
             ],
             [
                 'id'    => 2,
                 'title' => 'Холодильники',
+                'price' => 50,
             ],
             [
                 'id'    => 3,
                 'title' => 'Смартфоны',
+                'price' => 50,
             ],
             [
                 'id'    => 4,
                 'title' => 'Стиральные машины',
+                'price' => 50,
             ],
             [
                 'id'    => 5,
                 'title' => 'Игровые приставки',
+                'price' => 100,
             ],
             [
                 'id'    => 6,
                 'title' => 'Подарки',
+                'price' => 10,
             ],
         ]);
 
