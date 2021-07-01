@@ -1,8 +1,6 @@
 <?php
 
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Route;
-
+/** @var \Illuminate\Routing\Router $router */
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -14,6 +12,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+$router->get('catalog', 'Catalog\\CatalogController@index');
+$router->get('catalog/{id}', 'Catalog\\CatalogController@advert');
