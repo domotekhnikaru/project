@@ -51,7 +51,7 @@
 
 ```
 SHA1 от строки
-secret&transaction=номертранзакцииitem_id=значение&site_id=значение&amount=сумма&user=test&value=1
+secret&transaction=номертранзакции&item_id=значение&site_id=значение&amount=сумма&user=test&value=1
 где user и value - это все ключи=значения parameters, отсортированные в алфавитном порядке.
 secret - секретная строка, равная APP_KEY в файле .env
 
